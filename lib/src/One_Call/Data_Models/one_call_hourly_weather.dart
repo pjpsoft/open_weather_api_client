@@ -153,7 +153,7 @@ class OneCallHourlyWeather {
     );
 
     // Formatting the probability of precipitation
-    int? pop = (json['pop']) * 100;
+    int? pop = (json['pop'] as int) * 100;
     int? precipitationChance = int.parse(pop!.toStringAsFixed(0));
 
     // Formatting the amount of rain
