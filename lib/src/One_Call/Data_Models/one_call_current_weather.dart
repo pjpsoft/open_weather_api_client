@@ -116,7 +116,7 @@ class OneCallCurrentWeather {
 
     // Formatting temperature
     num? temp = temperatureToSelectedUnit(
-      temp: json['temp'],
+      temp: json['temp'] as int,
       unit: settings.temperatureUnit,
     );
 
